@@ -25,6 +25,33 @@ a:hover {
     font-family: Raleway;
 }
 
+.NavMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    @apply pl-6 bg-white shadow;
+    z-index: 4;
+}
+
+.NavMenu__text {
+    max-width: 250px;
+    @apply font-Raleway font-medium text-black text-3xl;
+}
+
+.NavMenu__item {
+    /* display: flex; */
+    align-items: center;
+    @apply hidden md:flex;
+}
+
+.NavMenu__item li {
+    @apply font-Raleway font-medium text-black tracking-widest text-lg p-6;
+}
+
 .hero {
     width: 100%;
     display: flex;
