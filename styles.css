@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: YuGothic, "Yu Gothic Medium", "Yu Gothic", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ,
+        sans-serif;
+    line-height: 1.8;
+    letter-spacing: 0.05rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.raleway {
+    font-family: Raleway;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    height: 100vh;
+    background: url(img/hero_img.png) center/cover;
+    padding-bottom: 3rem;
+}
+
+.hero__text {
+    @apply font-Raleway text-4xl md:text-6xl lg:text-8xl text-white tracking-widest pl-4 md:pl-0;
+}
+
+.heroChild {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @apply bg-gray h-52 md:h-80;
+}
+
+.heroChild__text {
+    @apply font-Raleway font-medium text-4xl md:text-6xl lg:text-8xl text-primary tracking-widest pl-4 md:pl-0;
+}
+
+.PictureCard {
+    @apply relative;
+}
+
+.PictureCard__img {
+    @apply object-cover object-center;
+}
+
+.PictureCard__wrapper {
+    z-index: 2;
+    @apply relative grid grid-cols-1 md:grid-cols-2 gap-8;
+}
+
+.PictureCard__inner {
+    @apply flex items-center justify-center px-4;
+}
+
+.PictureCard__text {
+    @apply mb-12;
+}
+
+.PictureCard__logo {
+    z-index: 1;
+    bottom: -8vw;
+    right: 0rem;
+    position: absolute;
+    @apply md:block hidden;
+}
+
+.MainHeading {
+    @apply text-3xl text-primary mb-6 md:mb-8;
+}
+
+.MainBtn {
+    @apply w-72 rounded-full max-w-full transition duration-150 block mx-auto md:ml-0 bg-MainBtnBg text-MainBtnText text-center relative p-6;
+}
+
+.MainBtn:hover {
+    @apply bg-MainBtnHoverBg text-MainBtnHoverText transform scale-105;
+}
+
+.MainBtn:hover span:after {
+    opacity: 0;
+}
+
+.MainBtn span:after {
+    transition: all 0.3s;
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 1px;
+    border-top: 1px solid #fff;
+    right: 50px;
+    position: absolute;
+    top: 50%;
+}
