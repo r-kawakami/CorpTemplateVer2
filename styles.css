@@ -9,6 +9,10 @@ body {
     letter-spacing: 0.05rem;
 }
 
+section {
+    @apply mb-12 lg:mb-20;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -78,7 +82,7 @@ a:hover {
 }
 
 .PictureCard {
-    @apply relative;
+    @apply relative mb-56;
 }
 
 .PictureCard__img {
@@ -132,4 +136,38 @@ a:hover {
     right: 50px;
     position: absolute;
     top: 50%;
+}
+
+.Company__list {
+    align-items: center;
+    padding: 1rem;
+    @apply block md:flex border-b border-gray　mx-4 lg:mx-0;
+}
+
+.Company__list dt {
+    @apply w-3/12;
+}
+
+.Company__list dd {
+    @apply w-9/12;
+}
+
+.News {
+    @apply px-4 lg:px-0;
+}
+
+.News__wrapper {
+    @apply overflow-y-scroll h-48;
+}
+.News__date {
+    @apply text-primary font-semibold;
+}
+
+.SubHeading span {
+    display: inline-block;
+    @apply font-Raleway tracking-widest font-semibold text-sm text-primary pb-4;
+}
+
+.SubHeading p {
+    @apply text-2xl text-primary mb-6 md:mb-8;
 }

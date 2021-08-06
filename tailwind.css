@@ -31526,6 +31526,16 @@ body {
   letter-spacing: 0.05rem;
 }
 
+section {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 1024px) {
+  section {
+    margin-bottom: 5rem;
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -31670,6 +31680,7 @@ a:hover {
 
 .PictureCard {
   position: relative;
+  margin-bottom: 14rem;
 }
 
 .PictureCard__img {
@@ -31792,6 +31803,87 @@ a:hover {
   right: 50px;
   position: absolute;
   top: 50%;
+}
+
+.Company__list {
+  align-items: center;
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: block;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(236, 240, 241, var(--tw-border-opacity));
+}
+
+@media (min-width: 768px) {
+  .Company__list {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Company__list {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.Company__list dt {
+  width: 25%;
+}
+
+.Company__list dd {
+  width: 75%;
+}
+
+.News {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .News {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.News__wrapper {
+  height: 12rem;
+  overflow-y: scroll;
+}
+
+.News__date {
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgba(52, 152, 219, var(--tw-text-opacity));
+}
+
+.SubHeading span {
+  display: inline-block;
+  padding-bottom: 1rem;
+  font-family: Raleway;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  --tw-text-opacity: 1;
+  color: rgba(52, 152, 219, var(--tw-text-opacity));
+}
+
+.SubHeading p {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgba(52, 152, 219, var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .SubHeading p {
+    margin-bottom: 2rem;
+  }
 }
 
 @media (min-width: 640px) {
