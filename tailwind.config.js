@@ -1,19 +1,21 @@
 module.exports = {
+  mode:'jit',
   purge: [
     '.**/*.html',
-     '.**/*.js',
+    '.**/*.js',
+    '.**/*.css'
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors:{
-        primary:"#3498db",
+        primary:"#9e9d24",
         black:"#222",
         white:"#fff",
         gray:"#ecf0f1",
-        MainBtnBg:"#3498db",
-        MainBtnText:"#fff",
-        MainBtnHoverBg:"#222",
+        MainBtnBg:"#fff",
+        MainBtnText:"#9e9d24",
+        MainBtnHoverBg:"#9e9d24",
         MainBtnHoverText:"#fff"
       },
       fontFamily: {

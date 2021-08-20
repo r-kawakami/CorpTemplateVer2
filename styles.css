@@ -111,22 +111,34 @@ a:hover {
 }
 
 .MainHeading {
-    @apply text-3xl text-primary mb-6 md:mb-8;
+    @apply relative  font-Raleway font-semibold tracking-widest text-3xl text-center text-primary mb-6 md:mb-8;
 }
 
-.MainBtn {
+.MainHeading::after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 125%;
+    width: 1px;
+    height: 60px;
+    background-color: #000;
+    z-index: 1;
+}
+
+/* .MainBtn {
     @apply w-72 rounded-full max-w-full transition duration-150 block mx-auto md:ml-0 bg-MainBtnBg text-MainBtnText text-center relative p-6;
-}
+} */
 
-.MainBtn:hover {
+/* .MainBtn:hover {
     @apply bg-MainBtnHoverBg text-MainBtnHoverText transform scale-105;
-}
+} */
 
-.MainBtn:hover span:after {
+/* .MainBtn:hover span:after {
     opacity: 0;
-}
+} */
 
-.MainBtn span:after {
+/* .MainBtn span:after {
     transition: all 0.3s;
     display: inline-block;
     content: "";
@@ -136,6 +148,53 @@ a:hover {
     right: 50px;
     position: absolute;
     top: 50%;
+} */
+
+.MainBtnCenter {
+    @apply text-center;
+}
+
+.MainBtn {
+    position: relative;
+    padding: 1rem 5rem;
+    display: inline-block;
+    transition: all 0.2s linear;
+    @apply text-MainBtnText bg-MainBtnBg border-2 border-MainBtnText font-medium text-center;
+}
+
+.MainBtn:hover {
+    @apply text-MainBtnHoverText bg-MainBtnHoverBg;
+}
+
+.MainBtn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -27px;
+    width: 40px;
+    height: 1px;
+    transition: all 0.2s linear;
+    @apply bg-MainBtnText;
+}
+
+.MainBtn::after {
+    content: "";
+    position: absolute;
+    top: 32%;
+    right: -22px;
+    width: 1px;
+    height: 12px;
+    transform: skewX(45deg);
+    transition: all 0.2s linear;
+    @apply bg-MainBtnText;
+}
+
+.MainBtn:hover::before {
+    right: -30px;
+}
+
+.MainBtn:hover::after {
+    right: -25px;
 }
 
 .Company__list {
