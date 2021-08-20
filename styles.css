@@ -214,8 +214,14 @@ a:hover {
     @apply relative;
 }
 
-.Works__text {
+.Service__wrapper {
+    @apply md:w-8/12 w-full bg-white md:p-8 p-4 relative;
+    margin-left: auto;
+    margin-right: 0;
+    top: -4rem;
+    right: 0rem;
 }
+
 .News {
     @apply px-4 lg:px-0;
 }
@@ -233,5 +239,5 @@ a:hover {
 }
 
 .SubHeading p {
-    @apply text-2xl text-primary mb-6 md:mb-8;
+    @apply text-2xl text-black mb-6 md:mb-8;
 }

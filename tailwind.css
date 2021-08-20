@@ -983,7 +983,29 @@ a:hover {
   position: relative;
 }
 
-.Works__text {
+.Service__wrapper {
+  position: relative;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .Service__wrapper {
+    width: 66.666667%;
+  }
+
+  .Service__wrapper {
+    padding: 2rem;
+  }
+}
+
+.Service__wrapper {
+  margin-left: auto;
+  margin-right: 0;
+  top: -4rem;
+  right: 0rem;
 }
 
 .News {
@@ -1026,7 +1048,7 @@ a:hover {
   font-size: 1.5rem;
   line-height: 2rem;
   --tw-text-opacity: 1;
-  color: rgba(158, 157, 36, var(--tw-text-opacity));
+  color: rgba(34, 34, 34, var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
