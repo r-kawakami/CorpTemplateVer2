@@ -79,10 +79,22 @@ a:hover {
     align-items: center;
     justify-content: center;
     @apply bg-gray h-52 md:h-80;
+    background: url(img/herochild_img.jpeg) center/cover;
 }
 
+.heroChild__wrapper {
+    @apply relative;
+    margin-right: auto;
+    margin-left: 0;
+    top: 11rem;
+    left: 3rem;
+}
 .heroChild__text {
-    @apply font-Raleway font-medium text-4xl md:text-6xl lg:text-8xl text-primary tracking-widest pl-4 md:pl-0;
+    @apply font-Raleway font-medium text-3xl md:text-4xl text-white bg-primary tracking-widest mb-2 p-2;
+}
+
+.heroChild__wrapper span {
+    @apply bg-primary text-white p-2;
 }
 
 .PictureCard {

@@ -732,33 +732,45 @@ a:hover {
   }
 }
 
+.heroChild {
+  background: url(img/herochild_img.jpeg) center/cover;
+}
+
+.heroChild__wrapper {
+  position: relative;
+  margin-right: auto;
+  margin-left: 0;
+  top: 11rem;
+  left: 3rem;
+}
+
 .heroChild__text {
-  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(158, 157, 36, var(--tw-bg-opacity));
+  padding: 0.5rem;
   font-family: Raleway;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   --tw-text-opacity: 1;
-  color: rgba(158, 157, 36, var(--tw-text-opacity));
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
   .heroChild__text {
-    padding-left: 0px;
-  }
-
-  .heroChild__text {
-    font-size: 3.75rem;
-    line-height: 1;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
-@media (min-width: 1024px) {
-  .heroChild__text {
-    font-size: 6rem;
-    line-height: 1;
-  }
+.heroChild__wrapper span {
+  --tw-bg-opacity: 1;
+  background-color: rgba(158, 157, 36, var(--tw-bg-opacity));
+  padding: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .PictureCard {
